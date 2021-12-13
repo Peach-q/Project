@@ -5,8 +5,6 @@ from stats import Stats
 from scores import Scores
 from menu import Menu
 
-
-
 def run():
 
     pygame.init()
@@ -25,7 +23,6 @@ def run():
     controls.create_army(screen, inos)
     stats = Stats()
     sc = Scores(screen, stats)
-
 
     while True:
         if stats.run_game:
