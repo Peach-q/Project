@@ -10,11 +10,12 @@ class Menu():
     def update_menu(self):
         pygame.mouse.set_visible(False)
 
+        main_font = pygame.font.Font('images/Datcub.ttf', 85)
         font = pygame.font.Font('images/Fifaks10Dev1.ttf', 70)
         self.screen.blit(self.back_game, (0, 0))
 
-        main_screen_word = font.render("Space rangers", 70, (255, 255, 255))
-        self.screen.blit(main_screen_word, (140, 100))
+        main_screen_word = main_font.render("Space rangers", 70, (255, 255, 255))
+        self.screen.blit(main_screen_word, (55, 100))
 
         if 140 < pygame.mouse.get_pos()[0] < 460 and 380 < pygame.mouse.get_pos()[1] < 440:
             screen_word = font.render("Новая игра", True, (128, 0, 128))
