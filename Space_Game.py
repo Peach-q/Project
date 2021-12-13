@@ -34,6 +34,6 @@ def run():
             controls.update_inos(stats, screen, sc, gun, inos, bullets)
         else:
             menu.update_menu()
-            stats.run_game = menu.make_choice()
+            stats.run_game = menu.selection_from_the_menu()
 
 run()
