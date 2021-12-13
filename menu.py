@@ -43,5 +43,4 @@ class Menu():
                     sys.exit()
                 return 100 < pygame.mouse.get_pos()[0] < 600 and 380 < pygame.mouse.get_pos()[1] < 440
 
-
         return False
